@@ -1,71 +1,38 @@
-# Tab Grouper Chrome Extension
+# Tab Grouper Extension
 
-## Description
-
-**Tab Grouper** is a Chrome extension that helps organize your browser tabs by grouping them based on their domain names. It also groups search engine result tabs separately. Easily group or ungroup all tabs in the current window with a click.
+A Chrome extension to group tabs by domain and ungroup them with ease. Search engine result tabs are grouped separately.
 
 ---
 
-## Features
+## How to Use the Tab Grouper Extension
 
-- Group tabs by website domain (e.g., all tabs from `example.com` grouped together)
-- Separate group for search result tabs (Google, Bing, Yahoo, DuckDuckGo, Yandex)
-- Colored group labels with two-letter domain abbreviations
-- Does **not** group single tabs (avoids groups with only one tab)
-- Ungroup all grouped tabs in the current window with one click
+1. **Install the Extension**
+   - Open Chrome and go to `chrome://extensions/`
+   - Enable **Developer mode** (top right toggle)
+   - Click **Load unpacked**
+   - Select the folder containing the extension files
 
----
+2. **Group Tabs**
+   - Click the extension icon in the toolbar
+   - Click the **Group Tabs** button in the popup
+   - Tabs will be grouped by domain
+   - Search engine result tabs (Google, Bing, Yahoo, DuckDuckGo, etc.) will be grouped under “SEARCH RESULTS”
+   - Tabs with only one member are NOT grouped to avoid unnecessary groups
 
-## Installation
+3. **Ungroup Tabs**
+   - Click the extension icon
+   - Click the **Ungroup Tabs** button
+   - All grouped tabs in the current window will be ungrouped
 
-1. Download or clone the extension files.
-2. Open Chrome and go to `chrome://extensions`.
-3. Enable **Developer mode** (top right toggle).
-4. Click **Load unpacked** and select the extension folder.
-5. The extension icon will appear in your toolbar.
-
----
-
-## Usage
-
-1. Click the extension icon.
-2. Click **Group Tabs** to group tabs by domain.
-3. Click **Ungroup Tabs** to ungroup all tabs in the current window.
+4. **Additional Notes**
+   - Group titles show a two-letter tag derived from the domain name
+   - Groups are randomly colored from a preset palette for easy distinction
 
 ---
 
-## File Structure
+## Development
 
-- `manifest.json` — Extension manifest and permissions
-- `background.js` — Logic for grouping and ungrouping tabs
-- `popup.html` — Popup UI with Group and Ungroup buttons
-- `popup.js` — Handles popup button actions
-- `icon.png` — Extension icon
-
----
-
-## Permissions
-
-- `tabs` — Access and control tabs
-- `tabGroups` — Manage tab groups
-- `activeTab` — Interact with the active browser tab
-
----
-
-## Notes
-
-- Works only on the current Chrome window
-- Requires Chrome version 88+
-- Group titles show a two-letter domain abbreviation
-- Search result tabs grouped separately with red color
-
----
-
-## Troubleshooting
-
-- Update Chrome to the latest version
-- Reload extension after any changes
-- Check console logs for errors in the background or popup scripts
+Feel free to fork and customize the extension to suit your needs!
 
 ---
 
